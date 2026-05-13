@@ -292,8 +292,8 @@ function toggleDarkModeTo(_A) {
 }
 function homeButtonPressed() {
   url = new URL(window.location.href)
-  if(url.href != `${url.origin}/home/`) {
-    document.location.href = `${url.origin}/home/`;
+  if(url.href != `${url.origin}/tfmsa/home/`) {
+    document.location.href = `${url.origin}/tfmsa/home/`;
   }else{
     docBodClsLst = document.body.classList;
     document.body.classList += " loadingMouse";
@@ -436,9 +436,9 @@ if (true) {
   document.getElementById("1").outerHTML = `
     <div class="top-banner banner">
       <a><span class="pointerMouse" style="display: inline" onclick="homeButtonPressed()"><img style="display:block;padding-top:0.25em;" src="https://dummyimage.com/500x500/456de5/cccccc.png" height="15em" /></span></a>
-      <a href="/home" style="display: inline">Home</a>
-      <a href="/more" style="display: inline">more</a>
-      <a href="/about" style="display: inline">about</a>
+      <a href="/tfmsa/home" style="display: inline">Home</a>
+      <a href="/tfmsa/more" style="display: inline">more</a>
+      <a href="/tfmsa/about" style="display: inline">about</a>
       <a><span class="pointerMouse" style="display: inline" onclick="settingsPanelOpen()">⚙</span></a>
     </div>
     `;
@@ -447,16 +447,16 @@ if (true) {
     <div class="bottomBannerPadding" id="bottomBannerPadding"></div>
     <div class="banner bottomBanner " id="bottomBanner">
         <p>${siteName}, No Rights Reserved, Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></p>
-        <img src="/images/CC0_button.png" height="${bottomBarImageHeight}px" width="auto" />
+        <img src="/tfmsa/images/CC0_button.png" height="${bottomBarImageHeight}px" width="auto" />
         <br>
-        <img src="/images/notbyai/Assisted-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
-        <img src="/images/notbyai/Authored-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
-        <img src="/images/notbyai/Created-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
-        <img src="/images/notbyai/Designed-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
-        <img src="/images/notbyai/Developed-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
-        <img src="/images/notbyai/Produced-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
-        <img src="/images/notbyai/Researched-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
-        <img src="/images/notbyai/Written-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
+        <img src="/tfmsa/images/notbyai/Assisted-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
+        <img src="/tfmsa/images/notbyai/Authored-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
+        <img src="/tfmsa/images/notbyai/Created-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
+        <img src="/tfmsa/images/notbyai/Designed-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
+        <img src="/tfmsa/images/notbyai/Developed-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
+        <img src="/tfmsa/images/notbyai/Produced-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
+        <img src="/tfmsa/images/notbyai/Researched-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
+        <img src="/tfmsa/images/notbyai/Written-By-Humans-Not-By-AI-Badge-black@2x.png" height="${bottomBarImageHeight}px" width="auto" />
         <!-- Only relevant images included, if you believe another category would match this project please tell me at name.a1729@proton.me -->
     </div>
     `;
